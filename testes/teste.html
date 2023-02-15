@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Exemplo de Criação de Elementos com JavaScript</title>
+</head>
+
+<body>
+    <script>
+        // Criando um elemento de parágrafo
+        var paragrafo = document.createElement("p");
+        var texto = document.createTextNode("Este é um parágrafo criado com JavaScript.");
+        paragrafo.appendChild(texto);
+        document.body.appendChild(paragrafo);
+
+        // Criando um campo de entrada de texto
+        var input = document.createElement("input");
+        input.setAttribute("type", "text");
+        input.setAttribute("name", "nome");
+        input.setAttribute("placeholder", "Digite seu nome");
+        document.body.appendChild(input);
+    </script>
+</body>
+
+</html>
